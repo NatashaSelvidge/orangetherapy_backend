@@ -1,5 +1,6 @@
 class Api::V1::WorkoutsController < ApplicationController
 
+
   def index 
     @workouts = Workout.all 
     render json: :@workouts
@@ -23,4 +24,5 @@ class Api::V1::WorkoutsController < ApplicationController
   def workout_params
     params.require(:workout).permit(:title, :description, :image_url, :category_id)
   end 
+
 end
