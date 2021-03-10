@@ -1,3 +1,3 @@
 class Workout < ApplicationRecord
-  belongs_to :Category
+  belongs_to :category
 end
