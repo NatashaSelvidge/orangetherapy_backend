@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 esp = Category.create(name: "ESP")
 endurance = Category.create(name: "Endurance")
 strength = Category.create(name: "Strength")
@@ -86,4 +87,6 @@ Floor Block 2 - 6 minutes
 
 5 each x goblet transverse squats
 
-10 x sumo deadlift", image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblushmagazine.ca%2Fwp-content%2Fuploads%2F2014%2F01%2Fmg_8378-2-1024x683.jpg&f=1&nofb=1", category_id: strength.id)
+10 x sumo deadlift", 
+image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblushmagazine.ca%2Fwp-content%2Fuploads%2F2014%2F01%2Fmg_8378-2-1024x683.jpg&f=1&nofb=1",
+ category_id: 3)
