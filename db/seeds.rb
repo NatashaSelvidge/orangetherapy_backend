@@ -6,17 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Category.destroy_all
-Workout.destroy_all
 
+esp = Category.create(name: "ESP")
+endurance = Category.create(name: "Endurance")
+strength = Category.create(name: "Strength")
+power = Category.create(name: "Power")
 
-esp = Category.create(name: "ESP/3G")
-endurance = Category.create(name: "Endurance/3G")
-strength = Category.create(name: "Strength/3G")
-power = Category.create(name: "Power/3G")
-
-Workout.create(title: " Wednesday 10 March 2021 ", 
-description: "
+Workout.create(title: "Wednesday 10 March 2021 - Strength 3G 60 minutes", description: "
 Tread Block 1
 
 1 min push
@@ -92,6 +88,4 @@ Floor Block 2 - 6 minutes
 5 each x goblet transverse squats
 
 
-10 x sumo deadlift", 
-image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblushmagazine.ca%2Fwp-content%2Fuploads%2F2014%2F01%2Fmg_8378-2-1024x683.jpg&f=1&nofb=1",
- category_id: 3);
+10 x sumo deadlift", image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblushmagazine.ca%2Fwp-content%2Fuploads%2F2014%2F01%2Fmg_8378-2-1024x683.jpg&f=1&nofb=1", category_id: 3)
