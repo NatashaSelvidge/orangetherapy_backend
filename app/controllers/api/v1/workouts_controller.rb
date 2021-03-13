@@ -2,7 +2,7 @@ class Api::V1::WorkoutsController < ApplicationController
 
 
   def index 
-    @workouts = Workout.all 
+    @workouts = Workout.all.reverse 
     #render json: :@workouts
     render json: WorkoutSerializer.new(@workouts)
   end 
@@ -23,7 +23,7 @@ class Api::V1::WorkoutsController < ApplicationController
   private 
 
   def workout_params
-    params.require(:workout).permit(:title, :description, :image_url, :category_id)
+    params.require(:workout).permit(:title, :description, :image_url, :category_id, :created_at)
   end 
 
 end
