@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :workouts, only: [:index, :create]
       resources :categories, only: [:index]
       resources :users, only: [:create]
+      post '/login', to: 'auth#create'
 
     end 
   end 
