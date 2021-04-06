@@ -7,239 +7,91 @@
 #   Character.create(name: 'Luke', movie: movies.first)      
 Category.destroy_all
 Workout.destroy_all
-User.destroy_all
+
 
 esp = Category.create(name: "ESP 3G")
 endurance = Category.create(name: "Endurance 3G")
 strength = Category.create(name: "Strength 3G")
 power = Category.create(name: "Power 3G")
 
-tosha = User.create(name: "Tosha", email: "natasha.selvidge@gmail.com", password: "mako88", image_url: "https://m.media-amazon.com/images/M/MV5BOThhZTkxMWMtY2UyYS00MTdlLTk1ZmMtZWQ0OWFkZjE2YTA1XkEyXkFqcGdeQXVyMjU0ODI4MzY@._V1_UX172_CR0,0,172,256_AL_.jpg", bio: "OrangeTheroy Member")
 
 
-Workout.create(title: " Wednesday 10 March 2021 ", 
+Workout.create(title: " Sunday March 28, 2021 ", 
 description: "
 
-Tread Block 1
+Tread Block - 14 minutes
 
-1 min push
+800m (0.5 mile) run @ 2%
 
-1 min base
+1 min WR
 
-30 sec base @ 2%
+400m (0.25 mile) run @ 3%
 
-30 sec base @ 3%
+1 min WR
 
-30 sec base @ 4%
+400m (0.25 mile) run @ 3%
 
-30 sec base @ 5%
+1 min WR
 
-30 sec base @ 6%
+160m (0.1 mile) run @ 4%
 
-30 sec base @ 7%
+1 min WR
 
-1 min base @ 1%
+160m (0.1 mile) run @ 4%
 
-30 sec AO
+1 min WR
 
-Tread Block 2
+160m (0.1 mile) run @ 4%
 
-1 min push
+1 min WR
 
-1 min base
+160m (0.1 mile) run @ 4%
 
-30 sec base @ 7%
+1 min WR
 
-30 sec base @ 6%
+Reset and run for distance
 
-30 sec base @ 5%
 
-30 sec base @ 4%
 
-30 sec base @ 3%
 
-30 sec base @ 2%
+Row Block - 14 minutes
 
-30 sec base @ 1%
+800m row + 40 lateral hops, 40 high knees
 
-30 sec AO
+400m row + 20 lateral hops, 20 high knees
 
-Row Block 1 - 6.5 minutes
+400m row + 20 lateral hops, 20 high knees
 
-1000m row
+200m row + 10 lateral hops, 10 high knees
 
-20 x courtesy lunges
+200m row + 10 lateral hops, 10 high knees
 
-Row for distance
+200m row + 10 lateral hops, 10 high knees
 
-Record total distance
+200m row + 10 lateral hops, 10 high knees
 
-Row Block 2 - 6 minutes
+Reset and row for distance
 
-30 sec AO row + 10 x courtesy lunge, 10 x medicine ball good morning
 
-Repeat until time
 
-Try to beat half your distance from block 1
 
 Floor Block 1 - 6.5 minutes
 
-8 x sumo squat to upright row
+6 each side x suitcase deadlift
 
-8 x front squat
+8 each side x bosu plank single leg lift
 
-8 x dead lift to low row
+8 each side x bosu single arm chest press to toe reach
 
 Floor Block 2 - 6 minutes
 
-5 each x goblet transverse squats
+6 each side x bosu goblet static lunge
 
+8 each side x bosu single leg hip bridge
 
-10 x sumo deadlift", 
+16 x bosu back extension",
 image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblushmagazine.ca%2Fwp-content%2Fuploads%2F2014%2F01%2Fmg_8378-2-1024x683.jpg&f=1&nofb=1",
- category_id: 3, user_id: tosha.id);
+ category_id: 1);
 
 
 
-# Workout.create(title: " Wednesday 11 March 2021 ", 
-# description: "
-
-# Tread Block 1
-
-# 1 min pushTread Block 1
-
-# 30 sec push
-
-# 30 sec AO
-
-# 30 sec WR
-
-# 30 sec push
-
-# 30 sec AO
-
-# 30 sec WR
-
-# 30 sec push
-
-# 30 sec AO
-
-# Tread Block 2
-
-# 30 sec push
-
-# 1 min base
-
-# 30 sec push
-
-# 1 min base
-
-# 30 sec AO
-
-# Tread Block 3
-
-# 30 sec push
-
-# 30 sec AO
-
-# 30 sec WR
-
-# 30 sec push
-
-# 30 sec AO
-
-# 30 sec WR
-
-# 30 sec push
-
-# 30 sec AO
-
-# Row Block 1
-
-# 30 sec push row
-
-# 30 sec AO row
-
-# 30 sec recovery
-
-# 30 sec push row
-
-# 30 sec AO row
-
-# 30 sec recovery
-
-# 30 sec push row
-
-# 30 sec AO row
-
-# **Row Block 2 - 3.5 minutes
-
-# 150m AO row
-
-# 20 x high knees
-
-# Repeat until time
-
-# Row Block 3
-
-# 30 sec push row
-
-# 30 sec AO row
-
-# 30 sec recovery
-
-# 30 sec push row
-
-# 30 sec AO row
-
-# 30 sec recovery
-
-# 30 sec push row
-
-# 30 sec AO row
-
-# Floor Block 1
-
-# 30 sec x single arm clean to press (R)
-
-# 30 sec x single arm clean to press (L)
-
-# 30 sec rest
-
-# 30 sec x single arm clean to press (R)
-
-# 30 sec x single arm clean to press (L)
-
-# 30 sec rest
-
-# 30 sec x single arm clean to press (R)
-
-# 30 sec x single arm clean to press (L)
-
-# Floor Block 2 - 3.5 minutes
-
-# 10 x TRX power pull up
-
-# 10 x power push up
-
-# Repeat until time
-
-# Floor Block 3
-
-# 30 sec x single arm low row (R)
-
-# 30 sec x single arm low row (L)
-
-# 30 sec rest
-
-# 30 sec x single arm low row (R)
-
-# 30 sec x single arm low row (L)
-
-# 30 sec rest
-
-# 30 sec x single arm low row (R)
-
-# 30 sec x single arm low row (L),
-# image_url: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.h-0c0Me3PzJ8Me9-KwTvWwHaEK%26pid%3DApi&f=1",
-#  category_id: 4);

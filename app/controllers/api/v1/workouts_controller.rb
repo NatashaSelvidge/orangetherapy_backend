@@ -16,7 +16,20 @@ class Api::V1::WorkoutsController < ApplicationController
     end 
   end 
 
+  # def update 
+  #   @workout = Workout.find_by(id: params[:id])
+  #   @workout.update(workout_params)
+  #   if @workout.save
+  #     render json WorkoutSerializer.new(@workout), status: :accepted
+  #   else 
+  #      render json: { error: workout.errors.full_messages }, status: :unprocessible_entity
+  #   end 
+  # end 
 
+  def destroy
+    @workout = Workout.find_by(id: params[:id])
+    @workout.destroy 
+  end 
 
 
 
